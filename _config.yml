@@ -7,11 +7,11 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Chen Nuo / Graduate Student"
+title                    : "Chen Nuo"
 title_separator          : "-"
 name                     : &name "Chen Nuo"
 description              : &description "personal description"
-url                      : https://ChenNuo.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://nuo-chen.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Nuo-Chen/ChenNuo.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -57,12 +57,12 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : &twitter "Norac_5"
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 :  "site-logo.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -72,22 +72,22 @@ social:
 
 
 # Analytics
-analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          :
+# analytics:
+#   provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+#   google:
+#     tracking_id          :
 
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
+  name             : "Chen Nuo"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  bio              : "Graduate Student <br> Research Assistant at UW-Madison, <a style='color: black;' href='https://www.aos.wisc.edu/'>Department of Atmospheric and Oceanic Sciences</a>"
+  location         : "Madison, WI, USA"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
+  pubmed           : 
+  googlescholar    : 
+  email            : 
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,20 +96,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "Nuo-Chen"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : https://orcid.org/0000-0003-0587-0892
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : "Norac_5"
   vine             :
   weibo            :
   xing             :
@@ -176,13 +176,13 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
     output: true
@@ -210,14 +210,14 @@ defaults:
       layout: single
       author_profile: true
   # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+  # - scope:
+  #     path: ""
+  #     type: teaching
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     share: true
+  #     comments: true
   # _publications
   - scope:
       path: ""
@@ -228,14 +228,14 @@ defaults:
       share: true
       comments: true
   # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
+  # - scope:
+  #     path: ""
+  #     type: portfolio
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     share: true
+  #     comment: true
   # _talks
   - scope:
       path: ""
