@@ -9,35 +9,46 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+# Education
 
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+- B.S. in NUIST (Nanjing University of Information Science and Technology), 2019
+- Ph.D in University of Wisconsin-Madison, 2023 (expected)
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+# Work experience
 
-Publications
-======
+- 2020 - 2023: Research Assistant
+
+  - University of Wisconsin-Madison
+  - Duties included: Using adjoint sensitivity to understand atmospheric dynamicla processes
+  - Supervisors: Dr. Michael Morgan, Dr. Jon Martin
+
+- Fall 2020 - 2021: Teaching Assistant
+
+  - University of Wisconsin-Madison
+  - Class: AOS 310 Dynamics of the Atmosphere and Ocean
+
+- 2018 - 2019: Research Assistant
+  - Shanghai Typhoon Institute
+  - Duties included: Analyzed hurricane reconnaissance dropsonde data and developed the characteristic hurricane boundary layer height with helicity to capture the turbulence behavior.
+  - Supervisor: Tang Jie
+
+# Skills
+
+- Programing Skills
+  - Unix/Linux
+  - python
+  - Julia
+  - html/css
+  - FORTRAN
+- Languages
+  - Chinese (native)
+  - Shanghai Dialect (native)
+  - German
+  - French
+  - Japanese
+
+# Publications
+
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
@@ -56,4 +67,7 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* 2022-2023: WxChallenge local manager
+* 2022: AOS GSA [website](https://www.aos.wisc.edu/~gsa/) maintainer
+* 2021-2022: AOS GSA secretary
+* 2020-2021: [URGE](https://urgeoscience.org/) participator
