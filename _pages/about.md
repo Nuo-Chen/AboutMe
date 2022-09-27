@@ -10,6 +10,10 @@ redirect_from:
 
 Hi! I'm Chen Nuo (陈诺), a fourth year graduate student in [Dr. Jonathan Martin's group](http://marrella.aos.wisc.edu/Martin.html) at University of Wisconsin-Madison. My current research is about using adjoint sensitivity to understand atmospheric dynamics, particularly focusing on sensitivity to potential vorticity. My broader interest include modeling, data assimilation, and machine learning.
 
+## Side Project
+I use 10-year observation to correct the GFS MOS prediction tailered for the [WxChallenge](https://www.wxchallenge.com/), which asks the competitor to predict the daily highest and lowest temperatures, maximum wind speed, and the total precipitation for the designated city.
+![correct mos](/images/random.png)
+
 <!-- A data-driven personal website
 ======
 Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
