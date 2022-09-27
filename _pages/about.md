@@ -12,7 +12,7 @@ Hi! I'm Chen Nuo (陈诺), a fourth year graduate student in [Dr. Jonathan Marti
 
 ## Side Project
 I use 10-year observation to correct the GFS MOS prediction tailered for the [WxChallenge](https://www.wxchallenge.com/), which asks the competitor to predict the daily highest and lowest temperatures, maximum wind speed, and the total precipitation for the designated city.
-![correct mos](/images/random.png)
+![correct mos](https://github.com/Nuo-Chen/AboutMe/blob/master/images/random.png?raw=true)
 
 <!-- A data-driven personal website
 ======
