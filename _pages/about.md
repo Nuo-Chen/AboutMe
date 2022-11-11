@@ -14,17 +14,17 @@ Hi! I'm Chen Nuo (陈诺), a fourth year graduate student in [Dr. Jonathan Marti
 **Background**: The adjoint of the Weather Research and Forecasting (WRF) model produces unphysical gravity wave in the backward integration that bounces back from the domain boundaries. This can mislead the researcher when intepreting the adjoint output results. 
 
 We speculate the gravity wave in the adjoint integration is generated due to the geostrophic adjustment from the adjoing forcing. Inverting the sensitivity to geostrophically balanced winds and temperature from the sensitivity to Quasi-geostrophic Potential Vorticity (QGPV) is capable of filtering out the gravity wave.
-![filter out gravity wave](https://github.com/Nuo-Chen/AboutMe/blob/master/images/grav900_f14_hor.png)
+![filter out gravity wave](images/grav900_f14_hor.png)
 
 ## Research Project
 **Background**: Many studies have used the adjoint sensitivity understand the atmospheric dynamics (e.g. Doyle et al. 2012, 2019, Chu and Tan 2010, Hoover et al. 2015) but mostly on the individual variables.
 
 Combining sensitivity to winds and temperature into the sensitivity to QGPV allows one to get an integral idea of the dynamical system with the "PV thinking". The importance of the ageostrophic imbalance is also evident in the adjoint sensitivity world in the frontal zone as in the real world.
-![frontal imbalance](https://github.com/Nuo-Chen/AboutMe/blob/master/images/imbalance-web.png)
+![frontal imbalance](images/imbalance-web.png)
 
 ## Side Project
 I use 10-year observation to correct the GFS MOS prediction tailered for the [WxChallenge](https://www.wxchallenge.com/), which asks the competitor to predict the daily highest and lowest temperatures, maximum wind speed, and the total precipitation for the designated city.
-![correct mos](https://github.com/Nuo-Chen/AboutMe/blob/master/images/random.png?raw=true)
+![correct mos](images/random.png)
 
 <!-- A data-driven personal website
 ======
