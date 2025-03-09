@@ -8,19 +8,31 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I'm Chen Nuo (陈诺), a fourth year graduate student in [Dr. Jonathan Martin's group](http://marrella.aos.wisc.edu/Martin.html) at University of Wisconsin-Madison. My current research is about using adjoint sensitivity to understand atmospheric dynamics, particularly focusing on sensitivity to potential vorticity. My broader interest include modeling, data assimilation, and machine learning.
+I'm a postdoctoral researcher in the [AAARG group](http://arctic.som.ou.edu/) at the University of Oklahoma. My current research explores the interactions between summertime Arctic cyclones, tropopause polar vortices, and Arctic sea ice using the Community Earth System Model version 2 (CESM2). I also use NCAR's Data Assimilation Research Testbed (DART) to assimilate various atmosphere and sea ice observations, enhancing model forecasts and understanding of Arctic dynamics.
 
-## Research Project
-**Background**: The adjoint of the Weather Research and Forecasting (WRF) model produces unphysical gravity wave in the backward integration that bounces back from the domain boundaries. This can mislead the researcher when intepreting the adjoint output results. 
+ My broader interests include data assimilation, numerical modeling, and the integration of machine learning in atmospheric science.
 
-We speculate the gravity wave in the adjoint integration is generated due to the geostrophic adjustment from the adjoing forcing. Inverting the sensitivity to geostrophically balanced winds and temperature from the sensitivity to Quasi-geostrophic Potential Vorticity (QGPV) is capable of filtering out the gravity wave.
-![filter out gravity wave](images/grav900_f14_hor.png)
+I completed my PhD at the University of Wisconsin-Madison in [Dr. Jonathan Martin's group](http://marrella.aos.wisc.edu/Martin.html), where I studied adjoint sensitivity in atmospheric dynamics, with a particular focus on sensitivity to potential vorticity.
 
-## Research Project
+## Pangu-DART Interface for Data Assimilation with Machine Learning Model
+Inspired by the idea that a Ensemble Data Assimilation (DA) system can integrate the observations into forecasts produced by any model, even a black-box model, I developed an interface between a Machine Learning NWP model ([Pangu-Weather](https://github.com/198808xc/Pangu-Weather)) and NSF NCAR's [Data Assimilation Research Testbed](https://dart.ucar.edu/). The code is available at https://github.com/NCAR/DART/tree/main/models/pangu.
+
+## Assessing the Impact of Surface Coupling and Observations on Arctic Cyclone Forecast Performance 
+In this Project, we use CESM2 and Observation System Simulation Experiment (OSSE) to investigate the interaction between Arctic Cyclones (ACs), Tropopause Polar Vortices (TPV), and Arctic Sea Ice. 
+
+## Adjoint Sensitivity to Potential Vorticity and Balanced Adjoint Forcing
 **Background**: Many studies have used the adjoint sensitivity understand the atmospheric dynamics (e.g. Doyle et al. 2012, 2019, Chu and Tan 2010, Hoover et al. 2015) but mostly on the individual variables.
 
 Combining sensitivity to winds and temperature into the sensitivity to QGPV allows one to get an integral idea of the dynamical system with the "PV thinking". The importance of the ageostrophic imbalance is also evident in the adjoint sensitivity world in the frontal zone as in the real world.
 ![frontal imbalance](images/imbalance-web.png)
+
+## Adjoint Sensitivity to Potential Vorticity and Balanced Adjoint Forcing
+**Background**: The adjoint of the Weather Research and Forecasting (WRF) model produces unphysical gravity wave in the backward integration that bounces back from the domain boundaries. These waves can obscure the interpretation of adjoint output. 
+
+When a geostrophically balanced sensitivity to winds and to temperature are inverted from the sensitivity to Quasi-geostrophic Potential Vorticity (QGPV) and are used as the adjoint forcing for adjoint model initializaiton, the gravity wave pattern can be filtered out.
+
+The adjoint sensitivity to PV also combines wind and temperature sensitivity such that more dynamical insight can be drawn from the adjoint sensitivity analysis using the "PV thinking"
+![filter out gravity wave](images/grav900_f14_hor.png)
 
 ## Side Project
 I use 10-year observation to correct the GFS MOS prediction tailered for the [WxChallenge](https://www.wxchallenge.com/), which asks the competitor to predict the daily highest and lowest temperatures, maximum wind speed, and the total precipitation for the designated city.

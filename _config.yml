@@ -56,8 +56,8 @@ alexa_site_verification:
 yandex_site_verification:
 
 # Social Sharing
-twitter:
-  username: &twitter "Norac_5"
+bluesky:
+  username: &bluesky "norac5.bsky.social"
 facebook:
   username:
   app_id:
@@ -80,8 +80,8 @@ social:
 author:
   name: "Chen Nuo"
   avatar: "Chen_Nuo.jpg"
-  bio: "Graduate Student <br> Research Assistant at UW-Madison, <a style='color: black;' href='https://www.aos.wisc.edu/'>Department of Atmospheric and Oceanic Sciences</a>"
-  location: "Madison, WI, USA"
+  bio: "Postdoc Researcher at University of Oklahoma"
+  location: "Norman, OK, USA"
   employer:
   pubmed:
   googlescholar:
@@ -92,6 +92,7 @@ author:
   codepen:
   dribbble:
   flickr:
+  bluesky: "norac5.bsky.social"
   facebook:
   foursquare:
   github: "Nuo-Chen"
@@ -100,14 +101,14 @@ author:
   instagram:
   impactstory: #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm:
-  linkedin:
+  linkedin: https://www.linkedin.com/in/nuo-chen-128239204/
   orcid: https://orcid.org/0000-0003-0587-0892
   pinterest:
   soundcloud:
   stackoverflow: # http://stackoverflow.com/users/123456/username
   steam:
   tumblr:
-  twitter: "Norac_5"
+  twitter:
   vine:
   weibo:
   xing:

@@ -11,10 +11,16 @@ redirect_from:
 
 # Education
 
+- Ph.D in University of Wisconsin-Madison, 2023 
 - B.S. in NUIST (Nanjing University of Information Science and Technology), 2019
-- Ph.D in University of Wisconsin-Madison, 2023 (expected)
 
 # Work experience
+
+- 2023 - 2025: Postdoc Researcher
+
+  - University of Oklahoma
+  - Duties included: Using CESM model and DART for atmosphere and sea ice data assimilation OSSEs
+  - Supervisors: Dr. Steven Cavallo
 
 - 2020 - 2023: Research Assistant
 
@@ -40,6 +46,13 @@ redirect_from:
   - Julia
   - html/css
   - FORTRAN
+
+- Software Skills
+  - WRF
+  - CESM
+  - DART
+  - Adobe Premiere
+
 - Languages
   - Chinese (native)
   - Shanghai Dialect (native)
