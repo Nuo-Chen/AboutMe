@@ -11,8 +11,8 @@ title: "Chen Nuo"
 title_separator: "-"
 name: &name "Chen Nuo"
 description: &description "personal description"
-url: https://nuo-chen.github.io/AboutMe 
-baseurl: "" # the subpath of your site, e.g. "/blog"
+url: https://nuo-chen.github.io 
+baseurl: "/AboutMe"
 repository: "Nuo-Chen/AboutMe"
 teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs: false # true, false (default)
@@ -184,7 +184,7 @@ collections:
     permalink: /:collection/:path/
   poems:
     output: true
-    permalink: /:collection/:name/
+    permalink: /poetry/:name/
 
 # Defaults
 defaults:
@@ -242,11 +242,11 @@ defaults:
       author_profile: true
       share: true
   # _poems
-  - scope:
-      path: "_poems"
-    values:
-      layout: "poetry"
-      permalink: /AboutMe/poetry/:name/
+  # - scope:
+  #     path: "_poems"
+  #   values:
+  #     layout: "poetry"
+  #     permalink: /poetry/:name/
   # For poetry landing page
   - scope:
       path: "poetry.md"
