@@ -11,8 +11,7 @@ title: "Chen Nuo"
 title_separator: "-"
 name: &name "Chen Nuo"
 description: &description "personal description"
-# url: https://nuo-chen.github.io/AboutMe 
-url: ""
+url: https://nuo-chen.github.io/AboutMe 
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "Nuo-Chen/AboutMe"
 teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
