@@ -1,0 +1,21 @@
+---
+layout: poetry-default
+---
+<article class="poem-entry">
+  <h1 class="poem-title">{{ page.title }}</h1>
+  <div class="poem-body">
+    {{ content }}
+  </div>
+
+  <div class="poem-footer">
+    <p>— Written on {{ page.date | date: "%B %d, %Y" }}</p>
+  </div>
+</article>
+
+<footer class="poem-footer">
+    <div class="poem-navigation">
+        <a href="{{ '/poetry/' | relative_url }}" class="btn-back-to-poems">
+            ← Back to All Poems
+        </a>
+    </div>
+</footer>

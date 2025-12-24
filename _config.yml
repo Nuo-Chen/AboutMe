@@ -11,7 +11,8 @@ title: "Chen Nuo"
 title_separator: "-"
 name: &name "Chen Nuo"
 description: &description "personal description"
-url: https://nuo-chen.github.io/AboutMe # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+# url: https://nuo-chen.github.io/AboutMe 
+url: ""
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "Nuo-Chen/AboutMe"
 teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -182,6 +183,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  poems:
+    output: true
+    permalink: /:collection/:name/
 
 # Defaults
 defaults:
@@ -238,6 +242,17 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _poems
+  - scope:
+      path: "_poems"
+    values:
+      layout: "poetry"
+      permalink: /poetry/:name/
+  # For poetry landing page
+  - scope:
+      path: "poetry.md"
+    values:
+      layout: "poetry-default"
 
 # Sass/SCSS
 sass:
@@ -299,3 +314,8 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+
+# Navigation
+header_pages:
+  - poetry.md

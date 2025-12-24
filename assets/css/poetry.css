@@ -1,0 +1,217 @@
+/* ===== KEEP YOUR EXISTING STYLES ===== */
+/* --- Variables & Reset --- */
+:root {
+  --bg-color: #fdfaf7;
+  --text-color: #4a443f;
+  --accent-color: #8c9a8e;
+  --border-color: #e8e2db;
+  --font-serif: 'Georgia', serif;
+}
+
+.poetry-site {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-serif);
+  margin: 0;
+  display: flex; 
+}
+
+/* ===== NEW LAYOUT STRUCTURE ===== */
+/* Hide all academic template elements */
+.poetry-site .masthead,
+.poetry-site .page__footer,
+.poetry-site .sidebar,
+.poetry-site .author__avatar,
+.poetry-site .author__content,
+.poetry-site .breadcrumbs {
+  display: none !important;
+}
+
+/* sidebar  */
+.poetry-navigation {
+  width: 280px;
+  padding: 40px;
+  border-right: 1px solid var(--border-color);
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+  background: var(--bg-color);
+  z-index: 1000;
+}
+
+/* ===== CONTENT AREA ===== */
+.poetry-main {
+  background: var(--bg-color);
+  margin-left: 280px; 
+  padding: 80px 10%;
+  flex-grow: 1;
+}
+
+/* ===== TYPOGRAPHY & POETRY ===== */
+.poem-body {
+  line-height: 2;
+  white-space: pre-wrap; /* Keeps your Markdown line breaks */
+  font-size: 1.1rem;
+}
+
+.poem-body p{
+  line-height: 2;
+  white-space: pre-wrap; /* Keeps your Markdown line breaks */
+  font-size: 1.1rem;
+  color: var(--text-color);
+  font-family: var(--font-serif);
+}
+
+.poem-title {
+  font-size: 2rem;
+  font-family: 'Georgia';
+}
+
+.poem-list {
+    list-style: none;
+    padding: 0;
+}
+
+.poem-list a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    padding: 8px 0;
+}
+
+.poem-footer p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  font-family: var(--font-serif);
+}
+
+.poem-navigation a {
+  font-size: 1.1rem;
+  font-family: var(--font-serif);
+}
+
+/* Constrain images within the poem body */
+.poem-body img {
+  max-width: 90%;    /* Scales the image down to fit the text width */
+  height: auto;       /* Maintains the original aspect ratio */
+  display: block;     /* Prevents text from wrapping awkwardly */
+  margin: 2rem auto;  /* Centers the image and adds space above/below */
+  border-radius: 8px; /* Softens the corners to match your theme */
+  opacity: 0.9;       /* Makes it look slightly softer/dreamier */
+}
+
+/* ===== CUSTOM SCROLLBAR ===== */
+.poetry-navigation::-webkit-scrollbar {
+  width: 6px; /* Very thin for a minimalist look */
+}
+
+.poetry-navigation::-webkit-scrollbar-track {
+  background: transparent; /* Makes the track invisible */
+}
+
+.poetry-navigation::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color); /* Uses your soft sage green */
+  border-radius: 10px; /* Makes it rounded */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Hide the scrollbar thumb by default using opacity */
+.poetry-navigation {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: transparent transparent; /* For Firefox */
+  transition: scrollbar-color 0.3s ease;
+}
+
+/* Class to show the scrollbar */
+.poetry-navigation.show-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #d1cdc7; /* A soft grey-sand color when visible */
+}
+
+/* Reappear on hover */
+.poetry-navigation:hover::-webkit-scrollbar-thumb {
+  background-color: #d1cdc7;
+  opacity: 1; /* ADDED: Show on hover */
+}
+
+/* --- Mobile View Adjustments --- */
+@media (max-width: 768px) {
+  .poetry-site {
+    flex-direction: column;
+  }
+
+  .poetry-navigation {
+    position: relative;    /* Removes the 'fixed' side-bar behavior */
+    width: 100%;           /* Takes full width of the screen */
+    height: auto;          /* Grows based on the menu content */
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    padding: 20px;
+    box-sizing: border-box;
+    left: 0;               /* Ensures it's not pushed to the left */
+  }
+
+  .poetry-main {
+    margin-left: 0 !important;
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Ensure the poem list is hidden until toggled */
+  .nav-content {
+    display: none; 
+    margin-top: 20px;
+  }
+
+  /* Mobile menu toggle */
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 0;
+    width: 100%;
+    text-align: left;
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    color: var(--text-color);
+  }
+  
+  .menu-toggle::before {
+    content: '☰ ';
+  }
+
+  /* This class will be added by JavaScript when you click the dashes */
+  .poetry-navigation.mobile-open .nav-content {
+    display: block;
+  }
+
+}
+
+/* Hide toggle on desktop */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* ===== POETRY FOOTER ===== */
+.poetry-footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-color);
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+.back-to-main {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.back-to-main:hover {
+  opacity: 1;
+}
+

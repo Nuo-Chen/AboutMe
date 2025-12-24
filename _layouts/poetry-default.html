@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ '/assets/css/poetry.css' | relative_url }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | My Poetry</title>
+</head>
+<script src="{{ '/assets/js/poetry.js' | relative_url }}"></script>
+<body class="flex">
+
+  <div class="poetry-navigation"> 
+    <header>
+      <h1><a href="{{ '/poetry/' | relative_url }}">一些思绪</a></h1>
+    </header>
+    {% include poetry-nav.html %}
+  </div>
+
+  <main class="poetry-main">
+    {{ content }}
+  </main>
+  
+</body>
+</html>
+
+
+
