@@ -246,7 +246,7 @@ defaults:
       path: "_poems"
     values:
       layout: "poetry"
-      permalink: /poetry/:name/
+      permalink: AboutMe/poetry/:name/
   # For poetry landing page
   - scope:
       path: "poetry.md"
