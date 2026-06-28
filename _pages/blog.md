@@ -4,6 +4,8 @@ title: "Blog"
 permalink: /blog/
 ---
 
+{% include base_path %}
+
 <div class="pub-year-group">
   <p class="pub-year-heading">Recent Posts</p>
   {% for post in site.posts %}
