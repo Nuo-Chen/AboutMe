@@ -22,7 +22,7 @@ a strong cold front featured by a tropopause polar vortex to its south. Of
 course the heavy snowfall can only happen in a mountain area with elevated
 height.
 
-<img src="{{ base_path }}/images/blog/2026-06-28/Pocatello_ID_snow_forecast.png"
+<img src="{{ site.baseurl }}/images/blog/2026-06-28/Pocatello_ID_snow_forecast.png"
 alt="snow fall forecast valid 12 z Jun 28 through 18 z Jun 30" width="600">
 
 This reminds me of a snowfall event in early June (Jun 11) in Na'qu., Xinjiang.
@@ -38,7 +38,7 @@ stationary front and dry line. Meanwhile extrem heat advisories have been issued
 for upper Midwest and in Maryland that are in the control of the high pressure
 system.
 
-<img src="{{ base_path }}/images/blog/2026-06-28/CONUS_wxmap.png"
+<img src="{{ site.baseurl }}/images/blog/2026-06-28/CONUS_wxmap.png"
 alt="CONUS weather map Jun 26" width="600">
 
 
@@ -57,7 +57,7 @@ had over 880 mm rainfall in 24 hours on Jun 25. The cause was the weak
 southweasterly and the over-night land wind formed a lower-level convergence
 that excited strong convection to move over land.
 
-<img src="{{ base_path }}/images/blog/2026-06-28/Taiwan_precip.jpg"
+<img src="{{ site.baseurl }}/images/blog/2026-06-28/Taiwan_precip.jpg"
 alt="Taiwan 880 mm rainfall Jun 25" width="600">
 
 I hope you all enjoy this blog. At least, I really enjoy writing it :)
