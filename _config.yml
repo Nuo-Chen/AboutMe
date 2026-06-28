@@ -12,7 +12,7 @@ title_separator: "-"
 name: &name "Chen Nuo"
 description: &description "personal description"
 url: https://nuo-chen.github.io 
-baseurl: ""
+baseurl: "/AboutMe"
 repository: "Nuo-Chen/AboutMe"
 teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs: false # true, false (default)
