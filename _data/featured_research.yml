@@ -1,0 +1,12 @@
+- title: "Summertime Arctic Cyclone &amp; Sea Ice Coupling"
+  desc: "Assessing the physical interactions and feedbacks between Tropopause Polar Vortices (TPVs), Arctic Cyclones (ACs), and sea ice cover using fully coupled Community Earth System Model version 2 (CESM2) simulations."
+  tags: ["CESM2", "Arctic Cyclones", "TPV", "Sea Ice Coupling"]
+  num: 1
+- title: "Pangu-DART Interface for Data Assimilation"
+  desc: "Developing an interface between machine learning numerical weather prediction models (Pangu-Weather) and NCAR's Data Assimilation Research Testbed (DART) to successfully ingest atmospheric observations into ML-based forecast ensembles."
+  tags: ["Data Assimilation", "DART", "Pangu-Weather", "Machine Learning"]
+  num: 2
+- title: "Balanced Adjoint PV Sensitivity"
+  desc: "Formulating geostrophically balanced initial sensitivities to temperature and wind fields using Quasi-Geostrophic Potential Vorticity (QGPV), which filters out unphysical gravity waves in the WRF adjoint model."
+  tags: ["Adjoint Sensitivity", "QGPV", "WRF Adjoint", "Gravity Waves"]
+  num: 3

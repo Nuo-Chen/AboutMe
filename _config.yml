@@ -12,12 +12,12 @@ title_separator: "-"
 name: &name "Chen Nuo"
 description: &description "personal description"
 url: https://nuo-chen.github.io 
-baseurl: "/AboutMe"
+baseurl: ""
 repository: "Nuo-Chen/AboutMe"
 teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs: false # true, false (default)
 words_per_minute: 160
-future: true
+future: false
 read_more: "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link: false #change to true to add link to talkmap on talks page
 comments:
@@ -57,7 +57,7 @@ yandex_site_verification:
 
 # Social Sharing
 bluesky:
-  username: &bluesky "norac5.bsky.social"
+  username:
 facebook:
   username:
   app_id:
@@ -80,19 +80,19 @@ social:
 author:
   name: "Chen Nuo"
   avatar: "Chen_Nuo.jpg"
-  bio: "Postdoc Researcher at University of Oklahoma"
-  location: "Norman, OK, USA"
+  bio: "Postdoc Researcher at Shanghai Typhoon Institute"
+  location: "Shanghai, China"
   employer:
   pubmed:
   googlescholar:
-  email:
+  email: "noracaos5_at_gmail.com"
   researchgate: # example: "https://www.researchgate.net/profile/yourprofile"
   uri:
   bitbucket:
   codepen:
   dribbble:
   flickr:
-  bluesky: "norac5.bsky.social"
+  bluesky:
   facebook:
   foursquare:
   github: "Nuo-Chen"
@@ -114,6 +114,15 @@ author:
   xing:
   youtube:
   wikipedia:
+  interests:
+    - "Arctic Cyclones"
+    - "Data Assimilation (DART)"
+    - "Potential Vorticity (PV) Dynamics"
+    - "Numerical Modeling (CESM2 / WRF)"
+    - "Machine Learning NWP"
+    - "Tropical Cyclones & Boundary Layer"
+    - "Adjoint Sensitivity"
+
 
 # Reading Files
 include:
@@ -193,7 +202,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: post
       author_profile: true
       read_time: true
       comments: true

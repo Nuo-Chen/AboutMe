@@ -1,5 +1,16 @@
 source "https://rubygems.org"
 
+# Jekyll/Liquid compatibility patch for Ruby 3.2+
+unless Object.method_defined?(:tainted?)
+  class Object
+    def tainted?
+      false
+    end
+    def taint; self; end
+    def untaint; self; end
+  end
+end
+
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:

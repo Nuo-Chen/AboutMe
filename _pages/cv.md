@@ -1,86 +1,109 @@
 ---
-layout: archive
+layout: single
 title: "CV"
 permalink: /cv/
-author_profile: true
-redirect_from:
-  - /resume
 ---
 
-{% include base_path %}
+<!-- Education Section -->
+<div class="pub-year-group">
+  <p class="pub-year-heading">Education</p>
+  {% for edu in site.data.cv_data.education %}
+  <div class="pub-item">
+    <span class="pub-year" style="min-width: 80px;">{{ edu.years }}</span>
+    <div class="pub-text">
+      <strong>{{ edu.title }}</strong>
+      <br>
+      {{ edu.institution }}
+      {% if edu.details %}
+      <br>
+      <span style="color: var(--text-tertiary);">{{ edu.details }}</span>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
 
-# Education
+<!-- Experience Section -->
+<div class="pub-year-group">
+  <p class="pub-year-heading">Research Experience</p>
+  {% for exp in site.data.cv_data.experience %}
+  <div class="pub-item">
+    <span class="pub-year" style="min-width: 80px;">{{ exp.years }}</span>
+    <div class="pub-text">
+      <strong>{{ exp.title }}</strong>
+      <br>
+      {{ exp.institution }}
+      <br>
+      <span style="color: var(--text-secondary);">{{ exp.desc }}</span>
+      {% if exp.supervisor %}
+      <br>
+      <span style="color: var(--text-tertiary);">{{ exp.supervisor }}</span>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
 
-- Ph.D in University of Wisconsin-Madison, 2023 
-- B.S. in NUIST (Nanjing University of Information Science and Technology), 2019
+<!-- Teaching Experience Section -->
+<div class="pub-year-group">
+  <p class="pub-year-heading">Teaching Experience</p>
+  {% for teach in site.data.cv_data.teaching %}
+  <div class="pub-item">
+    <span class="pub-year" style="min-width: 80px;">{{ teach.years }}</span>
+    <div class="pub-text">
+      <strong>{{ teach.title }}</strong>
+      <br>
+      {{ teach.institution }}
+      <br>
+      <span style="color: var(--text-secondary);">{{ teach.desc }}</span>
+    </div>
+  </div>
+  {% endfor %}
+</div>
 
-# Work experience
+<!-- Selected Talks Section -->
+<div class="pub-year-group">
+  <p class="pub-year-heading">Selected Presentations</p>
+  {% for talk in site.talks reversed %}
+  <div class="pub-item">
+    <span class="pub-year" style="min-width: 80px;">{{ talk.date | date: "%b %Y" }}</span>
+    <div class="pub-text">
+      <strong>{{ talk.title }}</strong>
+      <br>
+      {{ talk.type | default: "Talk" }} {% if talk.location %}at {{ talk.location }}{% endif %}
+      {% if talk.excerpt %}
+      <br>
+      <span style="color: var(--text-secondary);">{{ talk.excerpt }}</span>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
 
-- 2023 - 2025: Postdoc Researcher
+<!-- Technical Skills Section -->
+<div class="pub-year-group">
+  <p class="pub-year-heading">Technical Skills</p>
+  {% for skill in site.data.cv_data.skills %}
+  <div class="pub-item">
+    <span class="pub-year" style="min-width: 80px;">{{ skill.label }}</span>
+    <div class="pub-text">
+      {{ skill.items }}
+    </div>
+  </div>
+  {% endfor %}
+</div>
 
-  - University of Oklahoma
-  - Duties included: Using CESM model and DART for atmosphere and sea ice data assimilation OSSEs
-  - Supervisors: Dr. Steven Cavallo
-
-- 2020 - 2023: Research Assistant
-
-  - University of Wisconsin-Madison
-  - Duties included: Using adjoint sensitivity to understand atmospheric dynamicla processes
-  - Supervisors: Dr. Michael Morgan, Dr. Jon Martin
-
-- Fall 2020 - 2021: Teaching Assistant
-
-  - University of Wisconsin-Madison
-  - Class: AOS 310 Dynamics of the Atmosphere and Ocean
-
-- 2018 - 2019: Research Assistant
-  - Shanghai Typhoon Institute
-  - Duties included: Analyzed hurricane reconnaissance dropsonde data and developed the characteristic hurricane boundary layer height with helicity to capture the turbulence behavior.
-  - Supervisor: Tang Jie
-
-# Skills
-
-- Programing Skills
-  - Unix/Linux
-  - python
-  - Julia
-  - html/css
-  - FORTRAN
-
-- Software Skills
-  - WRF
-  - CESM
-  - DART
-  - Adobe Premiere
-
-- Languages
-  - Chinese (native)
-  - Shanghai Dialect (native)
-  - German
-  - French
-  - Japanese
-
-# Publications
-
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* 2022-2023: WxChallenge local manager
-* 2022: AOS GSA [website](https://www.aos.wisc.edu/~gsa/) maintainer
-* 2021-2022: AOS GSA secretary
-* 2020-2021: [URGE](https://urgeoscience.org/) participator
+<!-- Service and Leadership Section -->
+<div class="pub-year-group">
+  <p class="pub-year-heading">Service &amp; Leadership</p>
+  {% for serv in site.data.cv_data.service %}
+  <div class="pub-item">
+    <span class="pub-year" style="min-width: 80px;">{{ serv.years }}</span>
+    <div class="pub-text">
+      <strong>{{ serv.title }}</strong>
+      <br>
+      {{ serv.desc }}
+    </div>
+  </div>
+  {% endfor %}
+</div>

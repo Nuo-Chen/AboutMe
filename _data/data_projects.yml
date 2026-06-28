@@ -1,0 +1,22 @@
+- title: "Pangu-Weather DART Model Interface"
+  desc: "An ensemble data assimilation interface connecting the machine learning weather prediction model Pangu-Weather with NCAR's Data Assimilation Research Testbed (DART). This code is officially merged into the main NCAR DART codebase."
+  tags: ["DART Core", "Pangu-Weather", "Ensemble DA", "Fortran &amp; Python"]
+  links:
+    - text: "GitHub Code Repository"
+      url: "https://github.com/NCAR/DART/tree/main/models/pangu"
+    - text: "NCAR DART Project"
+      url: "https://dart.ucar.edu/"
+- title: "WxChallenge MOS Calibration Model"
+  desc: "Statistical post-processing codes using 10-year historical observation data to calibrate and correct the forecast tails of GFS Model Output Statistics (MOS). Used for the national WxChallenge forecasting competition."
+  tags: ["WxChallenge", "MOS Calibration", "Python", "GFS Post-processing"]
+  links:
+    - text: "GitHub Profile"
+      url: "https://github.com/Nuo-Chen"
+    - text: "WxChallenge Site"
+      url: "https://www.wxchallenge.com/"
+- title: "Dropsonde Helicity Boundary Layer Composites"
+  desc: "Data analysis scripts to process GPS dropsonde composite datasets, calculate boundary layer helicity, and determine the kinematic boundary layer heights of tropical cyclones of varying intensities."
+  tags: ["Helicity", "Dropsonde", "Boundary Layer", "Python &amp; MATLAB"]
+  links:
+    - text: "GitHub Profile"
+      url: "https://github.com/Nuo-Chen"

@@ -1,0 +1,24 @@
+- title: "Summertime Arctic Cyclone &amp; Sea Ice Coupling"
+  desc: "Summertime Arctic Cyclones (ACs) interact dynamically with Tropopause Polar Vortices (TPVs) and underlying sea ice. Using the Community Earth System Model version 2 (CESM2) and Observation System Simulation Experiments (OSSEs), this research investigates how coupled atmosphere-ocean-ice feedback processes modulate AC intensity and forecast error growth."
+  tags: ["CESM2", "Arctic Cyclones", "TPV", "OSSE", "Sea Ice Feedbacks"]
+  num: 1
+- title: "Pangu-DART Interface for Data Assimilation with Machine Learning NWP"
+  desc: "Ensemble Data Assimilation systems are capable of integrating observations into any forecast model. To test this with AI models, I developed a native interface between the machine learning weather model Pangu-Weather and NCAR's Data Assimilation Research Testbed (DART). This allows ML-based ensemble forecasts to ingest real-time observations dynamically, combining machine learning efficiency with rigorous data assimilation."
+  tags: ["Data Assimilation", "DART", "Pangu-Weather", "Ensemble Forecasts"]
+  num: 2
+- title: "Potential Vorticity (PV) Adjoint Sensitivity &amp; Wave Filtering"
+  desc: "Standard adjoint sensitivities to individual variables (wind and temperature) can trigger unphysical gravity wave noise in WRF backward integrations. By inverting geostrophically balanced sensitivity gradients using Quasi-Geostrophic Potential Vorticity (QGPV), the gravity wave patterns can be effectively filtered out. This provides clearer dynamical insights under 'PV thinking' frameworks."
+  tags: ["Adjoint Sensitivity", "QGPV", "WRF Adjoint", "Gravity Waves"]
+  num: 3
+  images:
+    - path: "imbalance-web.png"
+      caption: "Figure 1: Ageostrophic frontal imbalance patterns captured via adjoint sensitivity analysis in a simulated frontal zone."
+    - path: "grav900_f14_hor.png"
+      caption: "Figure 2: Adjoint sensitivity fields before and after applying geostrophically balanced QGPV initialization, showing the removal of boundary-reflecting gravity waves."
+- title: "Statistical MOS Post-Processing for WxChallenge"
+  desc: "A side project using a 10-year observation history to correct prediction tails of the GFS Model Output Statistics (MOS). This system is tailored for the national WxChallenge competition, refining daily predictions of temperature extremes, precipitation, and wind speeds."
+  tags: ["Post-Processing", "MOS", "WxChallenge", "GFS Calibration"]
+  num: 4
+  images:
+    - path: "random.png"
+      caption: "Figure 3: GFS MOS prediction error distribution tail-corrections compared against true observation outcomes."

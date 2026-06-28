@@ -6,6 +6,9 @@ excerpt: "We investigated the characteristic of helicity through the dropsonde c
 date: 2021-02-01
 venue: "Atmospheric Research"
 paperurl: "https://www.sciencedirect.com/science/article/pii/S0169809520312357"
+authors: "Chen, N., & Tang, J."
+doi: "10.1016/j.atmosres.2020.105326"
+highlighted: true
 # citation: ''
 ---
 

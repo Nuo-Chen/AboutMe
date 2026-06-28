@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Chen Nuo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Inline additions to support images in research cards neatly */
+    .research-img-container {
+      margin-top: 16px;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      overflow: hidden;
+      max-width: 100%;
+      background: #fff;
+    }
+    .research-img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 350px;
+      object-fit: contain;
+    }
+    .research-img-caption {
+      font-size: 11px;
+      color: var(--text-secondary);
+      padding: 8px 12px;
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border-light);
+      font-family: var(--sans);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== Top Header ===== -->
+<header class="site-header">
+  <div class="header-container">
+    <div class="site-logo">
+      <a href="index.html" class="logo-name">Chen Nuo</a>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="data.html">Data &amp; Code</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== Main Container ===== -->
+<div class="main-container">
+  <main class="main-content">
+    <h1 class="page-title">Research</h1>
+    <p class="page-breadcrumb">Home / Research</p>
+    <div class="divider"></div>
+
+    <p class="bio-text">
+      My research spans atmospheric dynamics, predictability, and data assimilation. 
+      I combine global climate modeling (CESM2), regional modeling (WRF), and data assimilation (DART) 
+      to investigate polar cyclones, tropopause polar vortices, and tropical boundary layers.
+    </p>
+
+    <div class="divider"></div>
+
+    <!-- Research Theme 1 -->
+    <div class="theme-card">
+      <div class="theme-num">1</div>
+      <div class="theme-body">
+        <p class="theme-title">Summertime Arctic Cyclone &amp; Sea Ice Coupling</p>
+        <p class="theme-desc">
+          Summertime Arctic Cyclones (ACs) interact dynamically with Tropopause Polar Vortices (TPVs) 
+          and underlying sea ice. Using the Community Earth System Model version 2 (CESM2) and Observation System Simulation 
+          Experiments (OSSEs), this research investigates how coupled atmosphere-ocean-ice feedback processes modulate AC intensity and forecast error growth.
+        </p>
+        <div class="theme-tags">
+          <span class="t-tag">CESM2</span>
+          <span class="t-tag">Arctic Cyclones</span>
+          <span class="t-tag">TPV</span>
+          <span class="t-tag">OSSE</span>
+          <span class="t-tag">Sea Ice Feedbacks</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Research Theme 2 -->
+    <div class="theme-card">
+      <div class="theme-num">2</div>
+      <div class="theme-body">
+        <p class="theme-title">Pangu-DART Interface for Data Assimilation with Machine Learning NWP</p>
+        <p class="theme-desc">
+          Ensemble Data Assimilation systems are capable of integrating observations into any forecast model. 
+          To test this with AI models, I developed a native interface between the machine learning weather model 
+          <strong>Pangu-Weather</strong> and NCAR's <strong>Data Assimilation Research Testbed (DART)</strong>. 
+          This allows ML-based ensemble forecasts to ingest real-time observations dynamically, combining machine learning efficiency 
+          with rigorous data assimilation.
+        </p>
+        <div class="theme-tags">
+          <span class="t-tag">Data Assimilation</span>
+          <span class="t-tag">DART</span>
+          <span class="t-tag">Pangu-Weather</span>
+          <span class="t-tag">Ensemble Forecasts</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Research Theme 3 -->
+    <div class="theme-card">
+      <div class="theme-num">3</div>
+      <div class="theme-body">
+        <p class="theme-title">Potential Vorticity (PV) Adjoint Sensitivity &amp; Wave Filtering</p>
+        <p class="theme-desc">
+          Standard adjoint sensitivities to individual variables (wind and temperature) can trigger unphysical gravity wave noise in WRF backward integrations. 
+          By inverting geostrophically balanced sensitivity gradients using Quasi-Geostrophic Potential Vorticity (QGPV), 
+          the gravity wave patterns can be effectively filtered out. This provides clearer dynamical insights under "PV thinking" frameworks.
+        </p>
+        <div class="theme-tags">
+          <span class="t-tag">Adjoint Sensitivity</span>
+          <span class="t-tag">QGPV</span>
+          <span class="t-tag">WRF Adjoint</span>
+          <span class="t-tag">Gravity Waves</span>
+        </div>
+        
+        <div class="research-img-container">
+          <img src="images/imbalance-web.png" alt="Frontal Imbalance" class="research-img" width="1200" height="600">
+          <p class="research-img-caption">Figure 1: Ageostrophic frontal imbalance patterns captured via adjoint sensitivity analysis in a simulated frontal zone.</p>
+        </div>
+
+        <div class="research-img-container" style="margin-top: 16px;">
+          <img src="images/grav900_f14_hor.png" alt="Filter out gravity wave" class="research-img" width="1200" height="400">
+          <p class="research-img-caption">Figure 2: Adjoint sensitivity fields before and after applying geostrophically balanced QGPV initialization, showing the removal of boundary-reflecting gravity waves.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Research Theme 4 (MOS Side Project) -->
+    <div class="theme-card">
+      <div class="theme-num">4</div>
+      <div class="theme-body">
+        <p class="theme-title">Statistical MOS Post-Processing for WxChallenge</p>
+        <p class="theme-desc">
+          A side project using a 10-year observation history to correct prediction tails of the GFS Model Output Statistics (MOS). 
+          This system is tailored for the national WxChallenge competition, refining daily predictions of temperature extremes, precipitation, and wind speeds.
+        </p>
+        <div class="theme-tags">
+          <span class="t-tag">Post-Processing</span>
+          <span class="t-tag">MOS</span>
+          <span class="t-tag">WxChallenge</span>
+          <span class="t-tag">GFS Calibration</span>
+        </div>
+        <div class="research-img-container">
+          <img src="images/random.png" alt="MOS Calibration" class="research-img" width="800" height="400">
+          <p class="research-img-caption">Figure 3: GFS MOS prediction error distribution tail-corrections compared against true observation outcomes.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Featured Publication -->
+    <p class="section-title">Feature Publication</p>
+
+    <div class="paper-card">
+      <p class="paper-journal">Atmospheric Research · 2021</p>
+      <p class="paper-title">
+        On the distribution of helicity in the tropical cyclone boundary layer from dropsonde composites
+      </p>
+      <p class="paper-authors">
+        <strong>Chen, N.</strong>, &amp; Tang, J.
+      </p>
+      <div class="paper-links">
+        <a href="https://www.sciencedirect.com/science/article/pii/S0169809520312357" target="_blank">[Journal Link]</a>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      © 2026 Chen Nuo · Hosted on <a href="https://pages.github.com/">GitHub Pages</a>
+    </footer>
+  </main>
+</div>
+
+</body>
+</html>
